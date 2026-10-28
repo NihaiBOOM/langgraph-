@@ -12,6 +12,10 @@ class Settings(BaseSettings):
     JWT_ALGORITHM: str = "HS256"
     JWT_EXPIRE_MINUTES: int = 1440
 
+    DASHSCOPE_API_KEY: str = ""
+    LLM_MODEL: str = "qwen-plus"
+    EMBEDDING_MODEL: str = "text-embedding-v3"
+
     class Config:
         env_file = ".env"
 
